@@ -1,0 +1,30 @@
+<ul class="list-group mt-5">
+  {{#each users as |user|}}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <div class="list-user">
+        {{#isAdmin user}}
+          <span class="badge badge-danger">ADMIN</span>
+        {{else}}
+          <div class="user">
+            <div class="image-user">
+              {{!-- {{ user.image }} --}}
+            </div>
+            <div class="text-user">
+              <p>
+                {{ user.email }}
+              </p>
+              <span class="badge badge-secondary">Usuario</span>
+            </div>
+          </div>
+        {{/isAdmin}}
+      </div>
+      {{#isAdmin ../session }}
+        <form action="/users/{{user._id}}/delete" method="post" class="float-right">
+          <button type="submit" class="btn btn-danger">
+            <i class="fas fa-times"></i>
+          </button>
+        </form>
+      {{/isAdmin}}
+    </li>
+  {{/each}}
+</ul>

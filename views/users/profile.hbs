@@ -1,0 +1,39 @@
+{{#if session}} 
+  <div class="list-user">
+    <div class="profile">
+      <div class="image-user">
+          {{!-- {{ user.image }} --}}
+        </div>
+        <div class="text-user">
+          <p>
+            {{ session.email }}
+          </p>
+        </div>
+        <div class="input-group flex-nowrap p-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <form class="profile-info">
+          <div class="form-group">
+            <label for="exampleInputPassword1">Cambiar contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Sexo</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Mujer</option>
+              <option>Hombre</option>
+              <option>Otros</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Información adicional</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-secondary">Modificar</button>
+      </form>
+    </div>
+  </div>
+{{/if}}
