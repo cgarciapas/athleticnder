@@ -1,0 +1,92 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/grada.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+  background-color: #363535cc;
+  padding: 30px 20px 80px 20px;
+  min-height: 90vh;
+}
+
+.logo {
+  background-image: url('../images/escudo01.png');
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+
+li.nav-item.final {
+  position: absolute;
+  right: 5%;
+  top: 25%;
+}
+
+.list-user {
+  margin: 0 auto;
+}
+
+.list-user .user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 30px 0;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.list-user .user .image-user {
+  background-image: url('../images/clara-user.jpg');
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px 0;
+}
+
+.list-user .user .text-user p {
+  font-size: 20px;
+}
+
+.profile {
+  margin: 30px 0;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.profile .image-user {
+  background-image: url('../images/clara-user.jpg');
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 20px auto;
+}
+
+.profile .profile-info {
+  padding: 20px;
+}
+
+.profile .text-user p {
+  font-size: 20px;
+  padding-left: 20px;
+}
